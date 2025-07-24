@@ -37,34 +37,41 @@
   border-radius: 4px;
 }
 
-.latest-news-wrapper {
-  background: #fff;
+.latest-news-bar {
+  background-color: #fff;
+  padding: 10px;
+  border-top: 2px solid #007bff;
+  border-bottom: 2px solid #007bff;
   overflow: hidden;
-  height: 120px;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.latest-news-scroll {
+.latest-news-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #007bff;
+  margin-bottom: 6px;
+}
+
+.latest-news-content {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  animation: scrollNews 12s linear infinite;
+  animation: scrollNews 18s linear infinite;
 }
 
-.latest-news-scroll div {
-  padding: 5px 10px;
-  font-size: 14px;
-  font-weight: bold;
+.latest-news-item {
+  padding: 5px 0;
+}
+
+.latest-news-item a {
   color: #000;
-}
-
-.latest-news-scroll a {
-  color: #0056b3;
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.latest-news-scroll a:hover {
+.latest-news-item a:hover {
   text-decoration: underline;
 }
 
@@ -72,6 +79,7 @@
   color: red;
   font-size: 10px;
   animation: blink 1s infinite;
+  margin-left: 6px;
 }
 
 @keyframes blink {
@@ -79,8 +87,8 @@
 }
 
 @keyframes scrollNews {
-  0% { top: 100%; }
-  100% { top: -200px; }
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
 }
 
 .main-grid {
@@ -140,14 +148,15 @@
     <a href="#">🆕 Latest Jobs</a>
     <a href="#">🎫 Admit Card</a>
     <a href="#">📊 Result</a>
-  </div>  <!-- Latest News -->  <div class="latest-news-wrapper">
-    <div class="latest-news-scroll">
-      <div>🔔 <a href="https://sarkariresult.com.cm/ssc-multi-tasking-staff-mts-recruitment-2025/">SSC MTS / Havildar Online Form 2025 <span class="new-tag">new</span></a></div>
-      <div>🔔 <a href="https://sarkariresult.com.cm/railway-rrb-technician-cen-no-02-2025-recruitment-2025/">RRB Technician (6238 Post) <span class="new-tag">new</span></a></div>
-      <div>🔔 <a href="https://sarkariresult.com.cm/ib-acio-grade-ii-executive-recruitment-2025/">IB ACIO Grade-II (3717 Posts) <span class="new-tag">new</span></a></div>
-      <div>🔔 <a href="http://sarkariresult.com.cm/up-police-constable-recruitment-2025/">UP Police Constable (19,220 Post) <span class="new-tag">new</span></a></div>
-      <div>🔔 <a href="https://sarkariresult.com.cm/army-school-awes-tgt-pgt-prt-recruitment-2025/">Army School AWES TGT, PGT, PRT Form <span class="new-tag">new</span></a></div>
-      <div>🔔 <a href="https://sarkariresult.com.cm/ibps-probationary-officer-po-15th-online-form-2025/">IBPS PO 15th Form (5208 Posts) <span class="new-tag">new</span></a></div>
+  </div>  <!-- Official Style Latest News Bar -->  <div class="latest-news-bar">
+    <div class="latest-news-title">🔔 Latest News</div>
+    <div class="latest-news-content">
+      <div class="latest-news-item"><a href="https://sarkariresult.com.cm/ssc-multi-tasking-staff-mts-recruitment-2025/">SSC MTS / Havildar Online Form 2025</a><span class="new-tag">new</span></div>
+      <div class="latest-news-item"><a href="https://sarkariresult.com.cm/railway-rrb-technician-cen-no-02-2025-recruitment-2025/">RRB Technician Form (6238 Post)</a><span class="new-tag">new</span></div>
+      <div class="latest-news-item"><a href="https://sarkariresult.com.cm/ib-acio-grade-ii-executive-recruitment-2025/">IB ACIO Grade-II Form (3717 Posts)</a><span class="new-tag">new</span></div>
+      <div class="latest-news-item"><a href="http://sarkariresult.com.cm/up-police-constable-recruitment-2025/">UP Police Constable Form (19,220 Post)</a><span class="new-tag">new</span></div>
+      <div class="latest-news-item"><a href="https://sarkariresult.com.cm/army-school-awes-tgt-pgt-prt-recruitment-2025/">Army School AWES TGT, PGT, PRT Form</a><span class="new-tag">new</span></div>
+      <div class="latest-news-item"><a href="https://sarkariresult.com.cm/ibps-probationary-officer-po-15th-online-form-2025/">IBPS PO 15th Form (5208 Posts)</a><span class="new-tag">new</span></div>
     </div>
   </div>  <div class="main-grid">
     <div class="box">

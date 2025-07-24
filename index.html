@@ -1,9 +1,143 @@
-<!-- NAVIGATION MENU -->
-<div style="background-color: #333; padding: 10px; text-align: center;">
-  <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Home</a>
-  <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Search</a>
-  <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Syllabus</a>
-  <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Latest Jobs</a>
-  <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Admit Card</a>
-  <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Result</a>
-</div>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JOB AND RESULT 🇮🇳</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(to right, orange, white, green);
+      text-align: center;
+      padding: 10px 0;
+      font-size: 28px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    /* Navigation */
+    .nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #222;
+      flex-wrap: wrap;
+      padding: 8px 0;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .nav a:hover {
+      color: #00bfff;
+    }
+
+    /* Latest News Bar */
+    .latest-bar {
+      background-color: #fff;
+      color: #007bff;
+      padding: 5px 10px;
+      font-weight: bold;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .latest-bar span {
+      margin-right: 20px;
+      animation: scroll 10s linear infinite;
+    }
+
+    .new-tag {
+      background-color: red;
+      color: white;
+      font-size: 10px;
+      padding: 1px 4px;
+      margin-left: 5px;
+      border-radius: 4px;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Content Grid */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .box {
+      background-color: white;
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    JOB AND RESULT 🇮🇳
+  </div>
+
+  <!-- Navigation Menu -->
+  <div class="nav">
+    <a href="#">🏠 Home</a>
+    <a href="#">🔍 Search</a>
+    <a href="#">📚 Syllabus</a>
+    <a href="#">📢 Latest Jobs</a>
+    <a href="#">🎫 Admit Card</a>
+    <a href="#">📄 Result</a>
+  </div>
+
+  <!-- Latest News Bar -->
+  <div class="latest-bar">
+    <span>SSC GD 2025 <span class="new-tag">new</span> | रेलवे ग्रुप D <span class="new-tag">new</span> | UP Police SI <span class="new-tag">new</span></span>
+  </div>
+
+  <!-- Main Grid Row 1 -->
+  <div class="grid-container">
+    <div class="box">Latest Jobs</div>
+    <div class="box">Admit Card</div>
+    <div class="box">Result</div>
+  </div>
+
+  <!-- Main Grid Row 2 -->
+  <div class="grid-container">
+    <div class="box">Syllabus</div>
+    <div class="box">Admissions</div>
+    <div class="box">Important Links</div>
+  </div>
+
+</body>
+</html>

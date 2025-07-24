@@ -1,162 +1,205 @@
-<!DOCTYPE html><html lang="hi">
+<!DOCTYPE html>
+<html lang="hi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>JOB AND RESULT 🇮🇳</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
     }
-    header {
-      background: linear-gradient(to right, #ff9933, white, #138808);
-      padding: 10px;
+
+    /* Header */
+    .header {
+      background: linear-gradient(to right, orange, white, green);
+      color: black;
+      padding: 12px;
       text-align: center;
-      font-size: 26px;
+      font-size: 28px;
       font-weight: bold;
     }
-    nav {
+
+    /* Navigation */
+    .nav {
+      background-color: #003366;
       display: flex;
-      justify-content: center;
-      background-color: #222;
       flex-wrap: wrap;
+      justify-content: center;
+      padding: 6px 0;
     }
-    nav a {
+
+    .nav a {
       color: white;
       text-decoration: none;
-      padding: 10px 15px;
-      display: block;
+      padding: 8px 14px;
       font-size: 14px;
     }
-    .latest-news {
-      background-color: white;
-      padding: 8px;
-      overflow-x: auto;
-      white-space: nowrap;
-      font-size: 14px;
-      border-bottom: 1px solid #ddd;
+
+    .nav a:hover {
+      background-color: #005599;
+      border-radius: 4px;
     }
-    .latest-news a {
-      color: #007bff;
-      margin-right: 15px;
-      text-decoration: none;
+
+    /* Open Latest News */
+    .latest-news-open {
+      padding: 10px;
+      font-size: 14px;
+      background-color: #ffffff;
+      color: #000;
+      text-align: center;
       font-weight: bold;
+      line-height: 1.6;
     }
-    .container {
+
+    .latest-news-open a {
+      color: #0056b3;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .latest-news-open a:hover {
+      text-decoration: underline;
+    }
+
+    .new-tag {
+      color: red;
+      font-size: 10px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    /* Main Grid */
+    .main-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 15px;
-      padding: 15px;
+      padding: 12px;
     }
+
     .box {
-      background-color: #fff;
+      background-color: white;
       border: 1px solid #ccc;
-      padding: 10px;
       border-radius: 8px;
+      padding: 10px;
     }
+
     .box h3 {
-      margin-top: 0;
       font-size: 18px;
-      color: #333;
       margin-bottom: 10px;
     }
+
     .box ul {
-      list-style: none;
       padding: 0;
+      list-style-type: none;
       margin: 0;
     }
+
     .box li {
       margin-bottom: 6px;
     }
+
     .box a {
       text-decoration: none;
-      color: #0066cc;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .box a:hover {
+      color: #007bff;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <header>
-    JOB AND RESULT 🇮🇳
-  </header>  <nav>
+
+  <!-- Header -->
+  <div class="header">🇮🇳 JOB AND RESULT</div>
+
+  <!-- Navigation -->
+  <div class="nav">
     <a href="#">🏠 Home</a>
     <a href="#">🔍 Search</a>
     <a href="#">📘 Syllabus</a>
-    <a href="#">🧾 Latest Jobs</a>
+    <a href="#">🆕 Latest Jobs</a>
     <a href="#">🎫 Admit Card</a>
     <a href="#">📊 Result</a>
-  </nav>  <div class="latest-news">
-    🔔 Latest news:
-    <a href="https://sarkariresult.com.cm/ssc-multi-tasking-staff-mts-recruitment-2025/">SSC MTS / Havildar Online Form 2025</a>
-    <a href="https://sarkariresult.com.cm/railway-rrb-technician-cen-no-02-2025-recruitment-2025/">RRB Technician Form (6238 Post)</a>
-    <a href="https://sarkariresult.com.cm/ib-acio-grade-ii-executive-recruitment-2025/">IB ACIO Grade-II Form (3717 Posts)</a>
-    <a href="http://sarkariresult.com.cm/up-police-constable-recruitment-2025/">UP Police Constable Form (19,220 Post)</a>
-    <a href="https://sarkariresult.com.cm/army-school-awes-tgt-pgt-prt-recruitment-2025/">Army School AWES Form</a>
-    <a href="https://sarkariresult.com.cm/ibps-probationary-officer-po-15th-online-form-2025/">IBPS PO 15th Form (5208 Posts)</a>
-  </div>  <div class="container">
-    <div class="box">
-      <h3>🧾 Latest Jobs</h3>
-      <ul>
-        <li><a href="https://sarkariresult.com.cm/indian-army-ssc-technical-april-men-recruitment-2025-26/">Indian Army SSC Technical Men April 2026 – Start</a></li>
-        <li><a href="https://sarkariresult.com.cm/ssc-multi-tasking-staff-mts-recruitment-2025-chk/">SSC MTS / Havaldar – Last Date Today</a></li>
-        <li><a href="https://sarkariresult.com.cm/ib-acio-grade-ii-executive-recruitment-2025-start-chk/">IB ACIO Grade-II – Start</a></li>
-        <li><a href="https://sarkariresult.com.cm/railway-rrb-technician-cen-no-02-2025-recruitment-2025/">RRB Technician – Start</a></li>
-        <li><a href="https://sarkariresult.com.cm/bsf-constable-tradesman-recruitment-2025/">BSF Constable Tradesman (3588 Post)</a></li>
-        <li><a href="https://sarkariresult.com.cm/ib-security-assistant-recruitment-2025/">IB Security Assistant (4987 Post)</a></li>
-        <!-- More can be added -->
-      </ul>
-    </div><div class="box">
-  <h3>🎫 Admit Card</h3>
-  <ul>
-    <li><a href="https://sarkariresult.com.cm/bihar-police-csbc-constable-admit-card-2025/">Bihar Police Constable – Out</a></li>
-    <li><a href="https://sarkariresult.com.cm/rssb-librarian-gr-iii-admit-card-2025/">RSSB Librarian Gr-III – Out</a></li>
-    <li><a href="https://sarkariresult.com.cm/bseb-sakshamta-pariksha-3rd-admit-card-2025/">BSEB Sakshamta 3rd – Out</a></li>
-    <li><a href="https://sarkariresult.com.cm/ssc-phase-13-admit-card-2025/">SSC Phase 13 – Out</a></li>
-    <li><a href="https://sarkariresult.com.cm/bihar-btsc-staff-nurse-admit-card-2025/">BTSC Staff Nurse – Out</a></li>
-  </ul>
-</div>
-
-<div class="box">
-  <h3>📊 Results</h3>
-  <ul>
-    <li><a href="#">SSC GD Constable Result 2025</a></li>
-    <li><a href="#">UP Police SI Final Result</a></li>
-    <li><a href="#">RRB ALP Technician CBT 1 Result</a></li>
-    <!-- Add real result links here -->
-  </ul>
-</div>
-
-<div class="box">
-  <h3>📘 Syllabus</h3>
-  <ul>
-    <li><a href="https://sarkariresult.com.cm/upsc-cbi-assistant-programmer-online-form-2024/">UPSC CBI Assistant Programmer</a></li>
-    <li><a href="https://sarkariresult.com.cm/railway-rrb-alp-exam-syllabus-2024/">RRB ALP Syllabus 2024</a></li>
-    <li><a href="https://sarkariresult.com.cm/railway-rpf-si-exam-syllabus-2024/">RPF SI Syllabus 2024</a></li>
-    <li><a href="https://sarkariresult.com.cm/ssc-gd-constable-exam-syllabus-2024/">SSC GD Constable Syllabus</a></li>
-  </ul>
-</div>
-
-<div class="box">
-  <h3>🎓 Admission</h3>
-  <ul>
-    <li><a href="https://sarkariresult.com.cm/sav-bihar-class-11-admission-online-form-2025/">SAV Bihar Class 11</a></li>
-    <li><a href="https://sarkariresult.com.cm/bcece-le-online-counselling-choice-filling-2025/">BCECE-LE Counseling</a></li>
-    <li><a href="https://sarkariresult.com.cm/up-polytechnic-jeecup-online-counseling-2025/">JEECUP Polytechnic</a></li>
-    <li><a href="https://sarkariresult.com.cm/nvs-class-6-admission-online-form-2026/">NVS Class 6</a></li>
-  </ul>
-</div>
-
-<div class="box">
-  <h3>🔗 Important Links</h3>
-  <ul>
-    <li><a href="https://sarkariresult.com.cm/upsc-otr-online-form-2025/">UPSC OTR Online Form</a></li>
-    <li><a href="https://sarkariresult.com.cm/ssc-otr-online-form-2025-re-open/">SSC OTR Form – Re-Open</a></li>
-    <li><a href="https://sarkariresult.com.cm/pan-card-registration-correction-other-service-2025/">PAN Card Services</a></li>
-    <li><a href="https://sarkariresult.com.cm/aadhar-card-download-correction-status-2025/">Aadhar Card Services</a></li>
-    <li><a href="https://sarkariresult.com.cm/voter-id-registration-other-voter-service-2025/">Voter ID Services</a></li>
-  </ul>
-</div>
-
   </div>
+
+  <!-- 🔔 Open Latest News Bar -->
+  <div class="latest-news-open">
+    🔔 
+    <a href="https://sarkariresult.com.cm/ssc-multi-tasking-staff-mts-recruitment-2025/">SSC MTS / Havildar 2025 <span class="new-tag">new</span></a> |
+    <a href="https://sarkariresult.com.cm/railway-rrb-technician-cen-no-02-2025-recruitment-2025/">RRB Technician (6238) <span class="new-tag">new</span></a> |
+    <a href="https://sarkariresult.com.cm/ib-acio-grade-ii-executive-recruitment-2025/">IB ACIO (3717) <span class="new-tag">new</span></a> |
+    <a href="http://sarkariresult.com.cm/up-police-constable-recruitment-2025/">UP Police Constable (19220) <span class="new-tag">new</span></a> |
+    <a href="https://sarkariresult.com.cm/army-school-awes-tgt-pgt-prt-recruitment-2025/">AWES TGT/PGT/PRT <span class="new-tag">new</span></a> |
+    <a href="https://sarkariresult.com.cm/ibps-probationary-officer-po-15th-online-form-2025/">IBPS PO 15th (5208) <span class="new-tag">new</span></a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-grid">
+    <div class="box">
+      <h3>🆕 Latest Jobs</h3>
+      <ul>
+        <li><a href="#">SSC GD 2025 Online Form</a></li>
+        <li><a href="#">UP Police SI 2025</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>🎫 Admit Cards</h3>
+      <ul>
+        <li><a href="#">UPSC NDA Admit Card</a></li>
+        <li><a href="#">Railway Group D Admit</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>📊 Results</h3>
+      <ul>
+        <li><a href="#">SSC CGL Tier-I Result</a></li>
+        <li><a href="#">CTET July 2025 Result</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>📘 Syllabus</h3>
+      <ul>
+        <li><a href="#">SSC GD Syllabus</a></li>
+        <li><a href="#">UP Police Syllabus</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>🎓 Admissions</h3>
+      <ul>
+        <li><a href="#">DU UG Admission 2025</a></li>
+        <li><a href="#">BHU PG Admission</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>🔗 Important Links</h3>
+      <ul>
+        <li><a href="https://ssc.nic.in">SSC Official Site</a></li>
+        <li><a href="https://upsc.gov.in">UPSC Official Site</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2025 JOB AND RESULT | Designed by 🇮🇳 दोस्त
+  </div>
+
 </body>
 </html>

@@ -1,180 +1,79 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JOB AND RESULT 🇮🇳</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-      zoom: 100%;
-    }
-    header {
-      background: linear-gradient(to right, orange, white, green);
-      text-align: center;
-      padding: 10px;
-      font-size: 26px;
-      font-weight: bold;
-    }
-    nav {
-      background: #003366;
-      color: white;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    nav a {
-      padding: 10px 15px;
-      text-decoration: none;
-      color: white;
-      font-size: 14px;
-    }
-    .latest-news {
-      background: white;
-      padding: 10px;
-      font-size: 14px;
-      color: blue;
-      animation: blink 1s infinite;
-    }
-    @keyframes blink {
-      50% { opacity: 0.7; }
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 10px;
-      padding: 10px;
-    }
-    .column {
-      background: #ffffff;
-      border: 1px solid #ddd;
-      padding: 10px;
-      border-radius: 8px;
-    }
-    .column h3 {
-      border-bottom: 2px solid #007bff;
-      padding-bottom: 5px;
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
-    .column ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    .column ul li {
-      margin-bottom: 6px;
-    }
-    .column ul li a {
-      text-decoration: none;
-      color: #000;
-    }
-    .column ul li a:hover {
-      color: #007bff;
-    }
-  </style>
-</head>
-<body>
+<style>
+.latest-news-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
-<header>JOB AND RESULT 🇮🇳</header>
+.news-box {
+  flex: 1;
+  min-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
-<nav>
-  <a href="#">🏠 Home</a>
-  <a href="#">🔍 Search</a>
-  <a href="#">📚 Syllabus</a>
-  <a href="#">🧾 Latest Jobs</a>
-  <a href="#">🎫 Admit Card</a>
-  <a href="#">📊 Result</a>
-</nav>
+.news-box h3 {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 8px;
+  color: black;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
 
-<div class="latest-news">
-  🔔 JOB AND RESULT UPDATES <span style="color:red; font-size:10px;">new</span> || SSC GD 2025 Form <span style="color:red; font-size:10px;">new</span> || CSBC Constable Admit Card <span style="color:red; font-size:10px;">new</span>
-</div>
+.news-list {
+  font-size: 14px;
+  color: blue;
+  line-height: 1.6;
+}
 
-<!-- Grid Row 1 -->
-<div class="container">
-  <!-- Latest Jobs -->
-  <div class="column">
-    <h3>🧾 Latest Jobs</h3>
-    <ul>
-      <li><a href="https://sarkariresult.com.cm/indian-army-ssc-technical-april-men-recruitment-2025-26/">Indian Army SSC Technical Men April 2026</a></li>
-      <li><a href="https://sarkariresult.com.cm/ssc-multi-tasking-staff-mts-recruitment-2025-chk/">SSC MTS / Havaldar – Last Date</a></li>
-      <li><a href="https://sarkariresult.com.cm/ib-acio-grade-ii-executive-recruitment-2025-start-chk/">IB ACIO Grade-II Executive</a></li>
-      <li><a href="https://sarkariresult.com.cm/railway-rrb-technician-cen-no-02-2025-recruitment-2025/">Railway RRB Technician 2025</a></li>
-      <li><a href="https://sarkariresult.com.cm/bsf-constable-tradesman-recruitment-2025/">BSF Constable Tradesman (3588 Post)</a></li>
-      <li><a href="https://sarkariresult.com.cm/ib-security-assistant-recruitment-2025/">IB Security Assistant (4987 Post)</a></li>
-      <li><a href="#">और देखें...</a></li>
-    </ul>
+@media screen and (max-width: 768px) {
+  .latest-news-grid {
+    flex-direction: column;
+  }
+}
+</style>
+
+<div class="latest-news-grid">
+  <!-- ✅ Latest Jobs -->
+  <div class="news-box">
+    <h3>✅ Latest Jobs</h3>
+    <div class="news-list">
+      Indian Army SSC Tech 2026 <br>
+      SSC MTS Last Date Today <br>
+      RRB Technician <br>
+      IB Security Assistant <br>
+      Indian Bank Apprentice
+    </div>
   </div>
 
-  <!-- Admit Cards -->
-  <div class="column">
+  <!-- 🎫 Admit Cards -->
+  <div class="news-box">
     <h3>🎫 Admit Cards</h3>
-    <ul>
-      <li>Bihar Police CSBC Constable Admit Card – Out</li>
-      <li>RSSB Librarian Gr-III Admit Card – Out</li>
-      <li>BSEB Sakshamta Pariksha 3rd – Out</li>
-      <li>SSC Phase 13 Admit Card – Out</li>
-      <li>Bihar BTSC Staff Nurse – Out</li>
-      <li>Indian Navy Agniveer MR Musician – Out</li>
-      <li><a href="#">और देखें...</a></li>
-    </ul>
+    <div class="news-list">
+      Bihar Police Constable <br>
+      SSC Phase 13 <br>
+      Navy MR Musician <br>
+      Haryana TET <br>
+      SBI PO Pre Exam
+    </div>
   </div>
 
-  <!-- Results -->
-  <div class="column">
+  <!-- 📊 Results -->
+  <div class="news-box">
     <h3>📊 Results</h3>
-    <ul>
-      <li><a href="https://sarkariresult.com.cm/itbp-medical-officer-mo-result-2025/">ITBP Medical Officer Result</a></li>
-      <li><a href="https://sarkariresult.com.cm/lnmu-ug-2nd-merit-list-2025-29/">LNMU UG 2nd Merit List</a></li>
-      <li><a href="https://sarkariresult.com.cm/nta-ugc-net-june-result-2025/">UGC NET June 2025</a></li>
-      <li><a href="https://sarkariresult.com.cm/railway-rrb-je-cbt-2-result-2025/">RRB JE CBT-2 Result</a></li>
-      <li><a href="https://sarkariresult.com.cm/hppsc-hpas-pre-exam-result-2025/">HPPSC HPAS Pre Result</a></li>
-      <li><a href="#">और देखें...</a></li>
-    </ul>
+    <div class="news-list">
+      ITBP MO Result <br>
+      UGC NET June <br>
+      Bihar Polytechnic <br>
+      Navy INCET Result <br>
+      RSMSSB Informatics
+    </div>
   </div>
 </div>
-
-<!-- Grid Row 2 -->
-<div class="container">
-  <!-- Syllabus -->
-  <div class="column">
-    <h3>📚 Syllabus</h3>
-    <ul>
-      <li><a href="https://sarkariresult.com.cm/upsc-cbi-assistant-programmer-online-form-2024/">UPSC CBI Assistant Programmer</a></li>
-      <li><a href="https://sarkariresult.com.cm/railway-rrb-alp-exam-syllabus-2024/">RRB ALP Syllabus</a></li>
-      <li><a href="https://sarkariresult.com.cm/railway-rpf-si-exam-syllabus-2024/">RPF SI Syllabus</a></li>
-      <li><a href="https://sarkariresult.com.cm/ssc-gd-constable-exam-syllabus-2024/">SSC GD Syllabus</a></li>
-    </ul>
-  </div>
-
-  <!-- Admission -->
-  <div class="column">
-    <h3>🎓 Admission</h3>
-    <ul>
-      <li>SAV Bihar Class 11 Admission</li>
-      <li>BCECE-LE Counseling</li>
-      <li>JEECUP Counseling</li>
-      <li>NVS Class 6 Admission 2026</li>
-      <li>MUIT Diploma Admissions</li>
-      <li>Bihar CET B.Ed Form – Start</li>
-    </ul>
-  </div>
-
-  <!-- Important Links -->
-  <div class="column">
-    <h3>🔗 Important Links</h3>
-    <ul>
-      <li>UPSC OTR Online Form 2025</li>
-      <li>SSC OTR Re-Open 2025</li>
-      <li>PAN Card Services</li>
-      <li>Aadhar Card Services</li>
-      <li>UP Income/Caste Certificate</li>
-      <li>Bihar Dakhil Kharij Online</li>
-    </ul>
-  </div>
-</div>
-
-</body>
-</html>

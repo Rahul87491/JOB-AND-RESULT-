@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="hi">
+<!DOCTYPE html><html lang="hi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -9,149 +8,147 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
-    }
+    }.header {
+  background: linear-gradient(to right, orange, white, green);
+  color: black;
+  padding: 12px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
 
-    /* Header */
-    .header {
-      background: linear-gradient(to right, orange, white, green);
-      color: black;
-      padding: 12px;
-      text-align: center;
-      font-size: 28px;
-      font-weight: bold;
-    }
+.nav {
+  background-color: #003366;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 6px 0;
+}
 
-    /* Navigation */
-    .nav {
-      background-color: #003366;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 6px 0;
-    }
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  font-size: 14px;
+}
 
-    .nav a {
-      color: white;
-      text-decoration: none;
-      padding: 8px 14px;
-      font-size: 14px;
-    }
+.nav a:hover {
+  background-color: #005599;
+  border-radius: 4px;
+}
 
-    .nav a:hover {
-      background-color: #005599;
-      border-radius: 4px;
-    }
+.latest-news-wrapper {
+  background: #fff;
+  overflow: hidden;
+  height: 30px;
+  position: relative;
+}
 
-    /* Open Latest News */
-    .latest-news-open {
-      padding: 10px;
-      font-size: 14px;
-      background-color: #ffffff;
-      color: #000;
-      text-align: center;
-      font-weight: bold;
-      line-height: 1.6;
-    }
+.latest-news-scroll {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  animation: scrollNews 12s linear infinite;
+}
 
-    .latest-news-open a {
-      color: #0056b3;
-      text-decoration: none;
-      margin: 0 5px;
-    }
+.latest-news-scroll div {
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
 
-    .latest-news-open a:hover {
-      text-decoration: underline;
-    }
+.latest-news-scroll a {
+  color: #0056b3;
+  text-decoration: none;
+}
 
-    .new-tag {
-      color: red;
-      font-size: 10px;
-      animation: blink 1s infinite;
-    }
+.latest-news-scroll a:hover {
+  text-decoration: underline;
+}
 
-    @keyframes blink {
-      50% { opacity: 0; }
-    }
+.new-tag {
+  color: red;
+  font-size: 10px;
+  animation: blink 1s infinite;
+}
 
-    /* Main Grid */
-    .main-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 15px;
-      padding: 12px;
-    }
+@keyframes blink {
+  50% { opacity: 0; }
+}
 
-    .box {
-      background-color: white;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 10px;
-    }
+@keyframes scrollNews {
+  0% { top: 100%; }
+  100% { top: -180px; }
+}
 
-    .box h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  padding: 12px;
+}
 
-    .box ul {
-      padding: 0;
-      list-style-type: none;
-      margin: 0;
-    }
+.box {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
 
-    .box li {
-      margin-bottom: 6px;
-    }
+.box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
-    .box a {
-      text-decoration: none;
-      color: #333;
-      font-size: 14px;
-    }
+.box ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
 
-    .box a:hover {
-      color: #007bff;
-    }
+.box li {
+  margin-bottom: 6px;
+}
 
-    /* Footer */
-    .footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 12px;
-      font-size: 14px;
-      margin-top: 20px;
-    }
+.box a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.box a:hover {
+  color: #007bff;
+}
+
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
   </style>
 </head>
-<body>
-
-  <!-- Header -->
-  <div class="header">🇮🇳 JOB AND RESULT</div>
-
-  <!-- Navigation -->
-  <div class="nav">
+<body>  <div class="header">🇮🇳 JOB AND RESULT</div>  <div class="nav">
     <a href="#">🏠 Home</a>
     <a href="#">🔍 Search</a>
     <a href="#">📘 Syllabus</a>
     <a href="#">🆕 Latest Jobs</a>
-    <a href="#">🎫 Admit Card</a>
+    <a href="#">🎛 Admit Card</a>
     <a href="#">📊 Result</a>
-  </div>
-
-  <!-- 🔔 Open Latest News Bar -->
-  <div class="latest-news-open">
-    🔔 
-    <a href="https://sarkariresult.com.cm/ssc-multi-tasking-staff-mts-recruitment-2025/">SSC MTS / Havildar 2025 <span class="new-tag">new</span></a> |
-    <a href="https://sarkariresult.com.cm/railway-rrb-technician-cen-no-02-2025-recruitment-2025/">RRB Technician (6238) <span class="new-tag">new</span></a> |
-    <a href="https://sarkariresult.com.cm/ib-acio-grade-ii-executive-recruitment-2025/">IB ACIO (3717) <span class="new-tag">new</span></a> |
-    <a href="http://sarkariresult.com.cm/up-police-constable-recruitment-2025/">UP Police Constable (19220) <span class="new-tag">new</span></a> |
-    <a href="https://sarkariresult.com.cm/army-school-awes-tgt-pgt-prt-recruitment-2025/">AWES TGT/PGT/PRT <span class="new-tag">new</span></a> |
-    <a href="https://sarkariresult.com.cm/ibps-probationary-officer-po-15th-online-form-2025/">IBPS PO 15th (5208) <span class="new-tag">new</span></a>
-  </div>
-
-  <!-- Main Content -->
-  <div class="main-grid">
+  </div>  <!-- Latest News -->  <div class="latest-news-wrapper">
+    <div class="latest-news-scroll">
+      <div>🔔 <a href="https://sarkariresult.com.cm/ssc-multi-tasking-staff-mts-recruitment-2025/">SSC MTS / Havildar Online Form 2025 <span class="new-tag">new</span></a></div>
+      <div>🔔 <a href="https://sarkariresult.com.cm/railway-rrb-technician-cen-no-02-2025-recruitment-2025/">RRB Technician (6238 Post) <span class="new-tag">new</span></a></div>
+      <div>🔔 <a href="https://sarkariresult.com.cm/ib-acio-grade-ii-executive-recruitment-2025/">IB ACIO Grade-II (3717 Posts) <span class="new-tag">new</span></a></div>
+      <div>🔔 <a href="http://sarkariresult.com.cm/up-police-constable-recruitment-2025/">UP Police Constable (19,220 Post) <span class="new-tag">new</span></a></div>
+      <div>🔔 <a href="https://sarkariresult.com.cm/army-school-awes-tgt-pgt-prt-recruitment-2025/">Army School AWES TGT, PGT, PRT Form <span class="new-tag">new</span></a></div>
+      <div>🔔 <a href="https://sarkariresult.com.cm/ibps-probationary-officer-po-15th-online-form-2025/">IBPS PO 15th Form (5208 Posts) <span class="new-tag">new</span></a></div>
+    </div>
+  </div>  <div class="main-grid">
     <div class="box">
       <h3>🆕 Latest Jobs</h3>
       <ul>
@@ -160,7 +157,7 @@
       </ul>
     </div>
     <div class="box">
-      <h3>🎫 Admit Cards</h3>
+      <h3>🎛 Admit Cards</h3>
       <ul>
         <li><a href="#">UPSC NDA Admit Card</a></li>
         <li><a href="#">Railway Group D Admit</a></li>
@@ -194,12 +191,7 @@
         <li><a href="https://upsc.gov.in">UPSC Official Site</a></li>
       </ul>
     </div>
-  </div>
-
-  <!-- Footer -->
-  <div class="footer">
+  </div>  <div class="footer">
     © 2025 JOB AND RESULT | Designed by 🇮🇳 दोस्त
-  </div>
-
-</body>
+  </div></body>
 </html>

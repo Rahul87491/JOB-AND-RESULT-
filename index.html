@@ -1,79 +1,173 @@
-<style>
-.latest-news-grid {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.news-box {
-  flex: 1;
-  min-width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #fff;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.news-box h3 {
-  font-size: 16px;
-  text-align: center;
-  margin-bottom: 8px;
-  color: black;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
-}
-
-.news-list {
-  font-size: 14px;
-  color: blue;
-  line-height: 1.6;
-}
-
-@media screen and (max-width: 768px) {
-  .latest-news-grid {
-    flex-direction: column;
-  }
-}
-</style>
-
-<div class="latest-news-grid">
-  <!-- ✅ Latest Jobs -->
-  <div class="news-box">
-    <h3>✅ Latest Jobs</h3>
-    <div class="news-list">
-      Indian Army SSC Tech 2026 <br>
-      SSC MTS Last Date Today <br>
-      RRB Technician <br>
-      IB Security Assistant <br>
-      Indian Bank Apprentice
-    </div>
+<!DOCTYPE html><html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOB AND RESULT 🇮🇳</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #000;
+      zoom: 100%;
+    }
+    header {
+      background: linear-gradient(to right, orange, white, green);
+      padding: 10px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    nav a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 10px 16px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .latest-news-line {
+      background-color: #f0f0f0;
+      padding: 5px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      font-size: 16px;
+    }
+    .latest-news-line marquee a {
+      color: blue;
+      margin-right: 30px;
+      font-weight: bold;
+    }
+    .latest-news-line .new {
+      color: deeppink;
+      font-size: 12px;
+      margin-right: 5px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+    .grid-box {
+      border: 2px solid #964B00;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    .grid-box h3 {
+      text-decoration: underline;
+      margin-top: 0;
+      white-space: nowrap;
+    }
+    .grid-box ul {
+      padding-left: 18px;
+    }
+    .grid-box ul li a {
+      color: blue;
+      text-decoration: none;
+    }
+    footer {
+      background: #eee;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>🇮🇳 JOB AND RESULT</header>  <nav>
+    <a href="#">🏠 Home</a>
+    <a href="#">🔍 Search</a>
+    <a href="#">📘 Syllabus</a>
+    <a href="#">✅ Latest Jobs</a>
+    <a href="#">🎫 Admit Card</a>
+    <a href="#">📊 Result</a>
+  </nav>  <div class="latest-news-line">
+    <marquee behavior="scroll" direction="left">
+      <a href="#"><span class="new">🔴 new</span> SSC MTS / Havildar Online Form 2025</a>
+      <a href="#"><span class="new">🔴 new</span> RRB Technician Form (6238 Post)</a>
+      <a href="#"><span class="new">🔴 new</span> IB ACIO Grade-II Form (3717 Posts)</a>
+    </marquee>
   </div>
-
-  <!-- 🎫 Admit Cards -->
-  <div class="news-box">
-    <h3>🎫 Admit Cards</h3>
-    <div class="news-list">
-      Bihar Police Constable <br>
-      SSC Phase 13 <br>
-      Navy MR Musician <br>
-      Haryana TET <br>
-      SBI PO Pre Exam
-    </div>
+  <div class="latest-news-line">
+    <marquee behavior="scroll" direction="right">
+      <a href="#"><span class="new">🔴 new</span> Bihar Police Constable Admit Card 2025</a>
+      <a href="#"><span class="new">🔴 new</span> RSSB Librarian Admit Card 2025</a>
+      <a href="#"><span class="new">🔴 new</span> SSC Phase 13 Admit Card</a>
+    </marquee>
   </div>
-
-  <!-- 📊 Results -->
-  <div class="news-box">
-    <h3>📊 Results</h3>
-    <div class="news-list">
-      ITBP MO Result <br>
-      UGC NET June <br>
-      Bihar Polytechnic <br>
-      Navy INCET Result <br>
-      RSMSSB Informatics
+  <div class="latest-news-line">
+    <marquee behavior="scroll" direction="left">
+      <a href="#"><span class="new">🔴 new</span> SSC Stenographer C, D Final Result 2025</a>
+      <a href="#"><span class="new">🔴 new</span> UPSC Geo-Scientist Mains Result</a>
+      <a href="#"><span class="new">🔴 new</span> NTA UGC NET June Result 2025</a>
+    </marquee>
+  </div>  <div class="grid-container">
+    <div class="grid-box">
+      <h3>✅ Latest Jobs</h3>
+      <ul>
+        <li><a href="#">Indian Army SSC Technical Men April 2026 Online Form</a></li>
+        <li><a href="#">SSC MTS / Havaldar Online Form 2025 – Last Date Today</a></li>
+        <li><a href="#">IB ACIO Grade-II Online Form 2025</a></li>
+        <li><a href="#">RRB Technician Online Form 2025</a></li>
+      </ul>
     </div>
-  </div>
-</div>
+    <div class="grid-box">
+      <h3>🎫 Admit Cards</h3>
+      <ul>
+        <li><a href="#">Bihar Police CSBC Constable Admit Card 2025 – Out</a></li>
+        <li><a href="#">RSSB Librarian Gr-III Admit Card 2025</a></li>
+        <li><a href="#">SSC Phase 13 Admit Card 2025</a></li>
+        <li><a href="#">Bihar BTSC Staff Nurse Admit Card</a></li>
+      </ul>
+    </div>
+    <div class="grid-box">
+      <h3>📊 Results</h3>
+      <ul>
+        <li><a href="#">SSC Stenographer Final Result 2025</a></li>
+        <li><a href="#">UPSC Geo-Scientist Mains Result 2025</a></li>
+        <li><a href="#">NTA UGC NET June Result 2025</a></li>
+        <li><a href="#">Railway RRB JE CBT-2 Result</a></li>
+      </ul>
+    </div>
+    <div class="grid-box">
+      <h3>📘 Syllabus</h3>
+      <ul>
+        <li><a href="#">UPSC CBI Assistant Programmer</a></li>
+        <li><a href="#">RRB ALP Syllabus 2024</a></li>
+        <li><a href="#">RPF SI Syllabus 2024</a></li>
+        <li><a href="#">SSC GD Constable Syllabus</a></li>
+      </ul>
+    </div>
+    <div class="grid-box">
+      <h3>🎓 Admission</h3>
+      <ul>
+        <li><a href="#">SAV Bihar Class 11 Admission</a></li>
+        <li><a href="#">BCECE-LE Counseling</a></li>
+        <li><a href="#">NVS Class 6 Admission 2026</a></li>
+        <li><a href="#">Rajasthan B.Ed 2025</a></li>
+      </ul>
+    </div>
+    <div class="grid-box">
+      <h3>🔗 Important Links</h3>
+      <ul>
+        <li><a href="#">UPSC OTR Online Form</a></li>
+        <li><a href="#">PAN Card Correction</a></li>
+        <li><a href="#">Aadhar Card Download/Status</a></li>
+      </ul>
+    </div>
+  </div>  <footer>
+    <p>🎯 <strong>उद्देश्य:</strong> भारत के युवाओं तक नौकरियों और परिणामों की सटीक जानकारी पहुँचाना।</p>
+    <p>📞 <strong>संपर्क:</strong> jobandresult@email.com | </p>
+  </footer>
+</body>
+</html>

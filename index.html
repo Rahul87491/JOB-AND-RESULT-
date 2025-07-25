@@ -1,157 +1,42 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JOB AND RESULT</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      box-sizing: border-box;
-    }
+<div style="display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 10px; padding: 10px;">
 
-    header {
-      background: linear-gradient(to right, orange, white, green);
-      text-align: center;
-      padding: 10px 0;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      background: #f0f0f0;
-      font-size: 13px;
-      font-weight: bold;
-      padding: 10px;
-      gap: 20px;
-    }
-
-    nav span {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    /* Grid container */
-    .main-grid {
-      display: flex;
-      justify-content: space-between;
-      gap: 15px;
-      margin: 20px;
-      flex-wrap: nowrap;
-    }
-
-    .grid-box {
-      flex: 1;
-      border: 2px solid #964B00;
-      padding: 10px;
-      box-sizing: border-box;
-      min-height: 400px; /* ✅ लंबा बॉक्स */
-      max-width: 33.3%;   /* ✅ एक लाइन में तीनों फिट हों */
-      overflow-y: auto;
-    }
-
-    .grid-box h3 {
-      margin: 0 0 10px 0;
-      font-size: 18px;
-      border-bottom: 2px solid black;
-      padding-bottom: 5px;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .grid-box ul {
-      padding-left: 20px;
-      margin: 0;
-    }
-
-    .grid-box ul li a {
-      color: blue;
-      text-decoration: none;
-    }
-
-    .grid-box ul li a:hover {
-      text-decoration: underline;
-    }
-
-    /* Zoom और responsiveness के लिए सुधार */
-    @media screen and (max-width: 768px) {
-      .main-grid {
-        flex-direction: column;
-      }
-      .grid-box {
-        max-width: 100%;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Header -->
-  <header>🇮🇳 JOB AND RESULT</header>
-
-  <!-- Navigation Menu -->
-  <nav>
-    <span>🏠 Home</span>
-    <span>🔍 Search</span>
-    <span>📘 Syllabus</span>
-    <span>✅ Latest Jobs</span>
-    <span>🎫 Admit Card</span>
-    <span>📊 Result</span>
-  </nav>
-
-  <!-- ✅ Grid Section (Perfectly Aligned & Zoom-Friendly) -->
-  <div class="main-grid">
-    <!-- ✅ Latest Jobs -->
-    <div class="grid-box">
-      <h3>✅ <u>Latest Jobs</u></h3>
-      <ul>
-        <li><a href="#">Army SSC Tech April 2026</a></li>
-        <li><a href="#">SSC MTS 2025</a></li>
-        <li><a href="#">RRB Technician 2025</a></li>
-        <li><a href="#">UP Police Constable</a></li>
-        <li><a href="#">IB ACIO Grade II</a></li>
-        <li><a href="#">Delhi HC PA Recruitment</a></li>
-        <li><a href="#">AWES Army School TGT</a></li>
-        <li><a href="#">ITBP Constable 2025</a></li>
-      </ul>
-    </div>
-
-    <!-- 🎫 Admit Cards -->
-    <div class="grid-box">
-      <h3>🎫 <u>Admit Cards</u></h3>
-      <ul>
-        <li><a href="#">Bihar Police Admit Card</a></li>
-        <li><a href="#">RSSB Librarian Admit</a></li>
-        <li><a href="#">CTET July 2025</a></li>
-        <li><a href="#">SSC JE Admit Card</a></li>
-        <li><a href="#">Patna HC Steno Admit</a></li>
-        <li><a href="#">CRPF HCM Skill Test</a></li>
-        <li><a href="#">CUET PG Hall Ticket</a></li>
-        <li><a href="#">Air Force Group Y</a></li>
-      </ul>
-    </div>
-
-    <!-- 📊 Results -->
-    <div class="grid-box">
-      <h3>📊 <u>Results</u></h3>
-      <ul>
-        <li><a href="#">NTA UGC NET Result</a></li>
-        <li><a href="#">SSC GD Result 2025</a></li>
-        <li><a href="#">BPSC Teacher TRE Result</a></li>
-        <li><a href="#">CUET UG Result</a></li>
-        <li><a href="#">UPSC Prelims Result</a></li>
-        <li><a href="#">SSC CGL Tier 1 Result</a></li>
-        <li><a href="#">JEE Main Session 2</a></li>
-        <li><a href="#">RRB ALP 2025 Result</a></li>
-      </ul>
-    </div>
+  <!-- 📊 Result -->
+  <div style="min-width: 320px; border: 2px solid #964B00; padding: 10px; flex-shrink: 0;">
+    <h3 style="border-bottom: 2px solid #964B00;">📊 Result</h3>
+    <ul style="padding-left: 18px;">
+      <li><a href="#" style="color: blue;">UP B.Ed. 2025 Result – Online</a></li>
+      <li><a href="#" style="color: blue;">UPSSSC PET 2024 Result</a></li>
+      <li><a href="#" style="color: blue;">CUET UG 2024 Exam Result</a></li>
+      <li><a href="#" style="color: blue;">UPSC CDS 1 2024 Final Result</a></li>
+      <li><a href="#" style="color: blue;">MP High School Teacher Result</a></li>
+      <li><a href="#" style="color: blue;">BPSC TRE 3.0 Result 2025</a></li>
+    </ul>
   </div>
 
-</body>
-</html>
+  <!-- 🎫 Admit Card -->
+  <div style="min-width: 320px; border: 2px solid #964B00; padding: 10px; flex-shrink: 0;">
+    <h3 style="border-bottom: 2px solid #964B00;">🎫 Admit Card</h3>
+    <ul style="padding-left: 18px;">
+      <li><a href="#" style="color: blue;">CTET July 2025 Admit Card</a></li>
+      <li><a href="#" style="color: blue;">UPSSSC PET 2024 Admit Card</a></li>
+      <li><a href="#" style="color: blue;">CUET PG 2024 Admit Card</a></li>
+      <li><a href="#" style="color: blue;">UP Police Constable Admit Card</a></li>
+      <li><a href="#" style="color: blue;">Bihar DELED Entrance Admit</a></li>
+      <li><a href="#" style="color: blue;">SSC GD 2025 Admit Card</a></li>
+    </ul>
+  </div>
+
+  <!-- ✅ Latest Jobs -->
+  <div style="min-width: 320px; border: 2px solid #964B00; padding: 10px; flex-shrink: 0;">
+    <h3 style="border-bottom: 2px solid #964B00;">✅ Latest Jobs</h3>
+    <ul style="padding-left: 18px;">
+      <li><a href="#" style="color: blue;">SSC GD Constable 2025</a></li>
+      <li><a href="#" style="color: blue;">UPSSSC Junior Engineer Form</a></li>
+      <li><a href="#" style="color: blue;">Navy SSR/MR Online Form 2025</a></li>
+      <li><a href="#" style="color: blue;">IBPS PO Online Form 2025</a></li>
+      <li><a href="#" style="color: blue;">Railway RRB Technician 2025</a></li>
+      <li><a href="#" style="color: blue;">UP Police Constable 2025</a></li>
+    </ul>
+  </div>
+
+</div>

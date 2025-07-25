@@ -1,135 +1,180 @@
-<!DOCTYPE html><html lang="hi">
+<!DOCTYPE html>
+<html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JOB AND RESULT 🇮🇳</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JOB AND RESULT</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #fff;
-      color: #000;
-      zoom: 100%;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+      background-color: #fff;
     }
-    header {
+
+    .header {
       background: linear-gradient(to right, orange, white, green);
-      padding: 10px;
       text-align: center;
-      font-size: 28px;
+      padding: 10px;
+      font-size: 24px;
       font-weight: bold;
     }
-    nav {
+
+    .navbar {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
       background-color: #333;
-      overflow: hidden;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      font-size: 16px;
       white-space: nowrap;
     }
-    nav a {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      padding: 10px 16px;
-      text-decoration: none;
-      font-size: 16px;
-    }
-    nav a:hover {
+
+    .navbar a:hover {
       background-color: #555;
+      border-radius: 4px;
     }
-    .latest-news-line {
-      background-color: #f0f0f0;
-      padding: 5px;
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
+
+    /* 🔔 Latest News Section (No background) */
+    .marquee-line {
       font-size: 16px;
+      margin: 5px 0;
     }
-    .latest-news-line marquee a {
+
+    .marquee-line a {
       color: blue;
-      margin-right: 30px;
-      font-weight: bold;
+      text-decoration: none;
+      margin-right: 25px;
     }
-    .latest-news-line .new {
+
+    .marquee-line span {
       color: deeppink;
-      font-size: 12px;
-      margin-right: 5px;
+      font-weight: bold;
+      margin-left: 5px;
     }
+
+    /* 📦 Grid Layout */
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 10px;
       padding: 10px;
     }
+
     .grid-box {
       border: 2px solid #964B00;
-      border-radius: 5px;
       padding: 10px;
+      border-radius: 8px;
     }
+
     .grid-box h3 {
-      text-decoration: underline;
       margin-top: 0;
-      white-space: nowrap;
+      border-bottom: 2px solid #964B00;
+      padding-bottom: 5px;
     }
+
     .grid-box ul {
-      padding-left: 18px;
+      padding-left: 20px;
+      margin: 0;
     }
-    .grid-box ul li a {
+
+    .grid-box li {
+      margin-bottom: 6px;
+    }
+
+    .grid-box a {
       color: blue;
       text-decoration: none;
     }
+
+    /* 📞 Official Footer */
     footer {
-      background: #eee;
-      padding: 15px;
+      background-color: #f2f2f2;
+      color: #000;
+      padding: 20px 10px;
       text-align: center;
       font-size: 14px;
+      border-top: 2px solid #ccc;
+    }
+
+    footer h4 {
+      margin: 8px 0 4px;
+      font-size: 16px;
+    }
+
+    footer p {
+      margin: 4px 0;
     }
   </style>
 </head>
 <body>
-  <header>🇮🇳 JOB AND RESULT</header>  <nav>
+
+  <div class="header">🇮🇳 JOB AND RESULT</div>
+
+  <div class="navbar">
     <a href="#">🏠 Home</a>
     <a href="#">🔍 Search</a>
     <a href="#">📘 Syllabus</a>
     <a href="#">✅ Latest Jobs</a>
     <a href="#">🎫 Admit Card</a>
     <a href="#">📊 Result</a>
-  </nav>  <div class="latest-news-line">
-    <marquee behavior="scroll" direction="left">
-      <a href="#"><span class="new">🔴 new</span> SSC MTS / Havildar Online Form 2025</a>
-      <a href="#"><span class="new">🔴 new</span> RRB Technician Form (6238 Post)</a>
-      <a href="#"><span class="new">🔴 new</span> IB ACIO Grade-II Form (3717 Posts)</a>
+  </div>
+
+  <!-- 🔔 Latest News Section -->
+  <div class="marquee-line">
+    <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+      ✅ <a href="#">SSC MTS / Havildar Online Form 2025</a><span>new</span>
+      <a href="#">RRB Technician Form (6238 Post)</a><span>new</span>
+      <a href="#">IB ACIO Grade-II Form (3717 Posts)</a><span>new</span>
     </marquee>
   </div>
-  <div class="latest-news-line">
-    <marquee behavior="scroll" direction="right">
-      <a href="#"><span class="new">🔴 new</span> Bihar Police Constable Admit Card 2025</a>
-      <a href="#"><span class="new">🔴 new</span> RSSB Librarian Admit Card 2025</a>
-      <a href="#"><span class="new">🔴 new</span> SSC Phase 13 Admit Card</a>
+
+  <div class="marquee-line">
+    <marquee behavior="scroll" direction="right" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+      🎫 <a href="#">Bihar Police Constable Admit Card 2025</a><span>new</span>
+      <a href="#">RSSB Librarian Admit Card 2025</a><span>new</span>
+      <a href="#">SSC Phase 13 Admit Card 2025</a><span>new</span>
     </marquee>
   </div>
-  <div class="latest-news-line">
-    <marquee behavior="scroll" direction="left">
-      <a href="#"><span class="new">🔴 new</span> SSC Stenographer C, D Final Result 2025</a>
-      <a href="#"><span class="new">🔴 new</span> UPSC Geo-Scientist Mains Result</a>
-      <a href="#"><span class="new">🔴 new</span> NTA UGC NET June Result 2025</a>
+
+  <div class="marquee-line">
+    <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
+      📊 <a href="#">SSC Steno Final Result 2025</a><span>new</span>
+      <a href="#">UPSC Geo-Scientist Mains Result 2025</a><span>new</span>
+      <a href="#">NTA UGC NET June Result 2025</a><span>new</span>
     </marquee>
-  </div>  <div class="grid-container">
+  </div>
+
+  <!-- 📦 Main Grid Layout -->
+  <div class="grid-container">
     <div class="grid-box">
       <h3>✅ Latest Jobs</h3>
       <ul>
-        <li><a href="#">Indian Army SSC Technical Men April 2026 Online Form</a></li>
-        <li><a href="#">SSC MTS / Havaldar Online Form 2025 – Last Date Today</a></li>
+        <li><a href="#">Indian Army SSC Technical Men April 2026</a></li>
+        <li><a href="#">SSC MTS / Havaldar Online Form 2025</a></li>
         <li><a href="#">IB ACIO Grade-II Online Form 2025</a></li>
         <li><a href="#">RRB Technician Online Form 2025</a></li>
       </ul>
     </div>
+
     <div class="grid-box">
       <h3>🎫 Admit Cards</h3>
       <ul>
-        <li><a href="#">Bihar Police CSBC Constable Admit Card 2025 – Out</a></li>
+        <li><a href="#">Bihar Police Constable Admit Card 2025 – Out</a></li>
         <li><a href="#">RSSB Librarian Gr-III Admit Card 2025</a></li>
         <li><a href="#">SSC Phase 13 Admit Card 2025</a></li>
         <li><a href="#">Bihar BTSC Staff Nurse Admit Card</a></li>
       </ul>
     </div>
+
     <div class="grid-box">
       <h3>📊 Results</h3>
       <ul>
@@ -139,6 +184,7 @@
         <li><a href="#">Railway RRB JE CBT-2 Result</a></li>
       </ul>
     </div>
+
     <div class="grid-box">
       <h3>📘 Syllabus</h3>
       <ul>
@@ -148,6 +194,7 @@
         <li><a href="#">SSC GD Constable Syllabus</a></li>
       </ul>
     </div>
+
     <div class="grid-box">
       <h3>🎓 Admission</h3>
       <ul>
@@ -157,6 +204,7 @@
         <li><a href="#">Rajasthan B.Ed 2025</a></li>
       </ul>
     </div>
+
     <div class="grid-box">
       <h3>🔗 Important Links</h3>
       <ul>
@@ -165,9 +213,17 @@
         <li><a href="#">Aadhar Card Download/Status</a></li>
       </ul>
     </div>
-  </div>  <footer>
-    <p>🎯 <strong>उद्देश्य:</strong> भारत के युवाओं तक नौकरियों और परिणामों की सटीक जानकारी पहुँचाना।</p>
-    <p>📞 <strong>संपर्क:</strong> jobandresult@email.com | </p>
+  </div>
+
+  <!-- 📞 Official Footer -->
+  <footer>
+    <h4>🎯 उद्देश्य</h4>
+    <p>भारत के युवाओं तक नौकरियों और परिणामों की सटीक जानकारी पहुँचाना।</p>
+
+    <h4>📞 संपर्क</h4>
+    <p>ईमेल: <a href="mailto:jobandresult@gmail.com">jobandresult@gmail.com</a></p>
+    <p>वेबसाइट: <a href="https://rahul87491.github.io/JOB-AND-RESULT-/" target="_blank">JOB AND RESULT</a></p>
   </footer>
+
 </body>
 </html>
